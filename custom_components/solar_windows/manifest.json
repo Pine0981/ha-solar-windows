@@ -1,0 +1,14 @@
+{
+  "domain": "solar_windows",
+  "name": "Solar Windows",
+  "version": "1.0.0",
+  "documentation": "https://github.com/YOUR_USERNAME/ha-solar-windows",
+  "issue_tracker": "https://github.com/YOUR_USERNAME/ha-solar-windows/issues",
+  "codeowners": ["@YOUR_USERNAME"],
+  "requirements": [],
+  "dependencies": ["sun"],
+  "after_dependencies": ["weather"],
+  "config_flow": true,
+  "iot_class": "calculated",
+  "integration_type": "hub"
+}

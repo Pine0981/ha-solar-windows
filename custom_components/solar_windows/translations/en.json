@@ -1,0 +1,50 @@
+{
+  "title": "Solar Windows",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Solar Windows — global settings",
+        "description": "Configure how sun detection works. You'll add your windows in the next step.",
+        "data": {
+          "weather_entity": "Weather entity",
+          "sun_cone": "Sun cone width (degrees either side of window facing)",
+          "min_elevation": "Minimum sun elevation (degrees above horizon)"
+        }
+      },
+      "add_window": {
+        "title": "Add a window",
+        "description": "{description}",
+        "data": {
+          "name": "Window name (e.g. Living room south window)",
+          "facing": "Direction the window faces",
+          "add_another": "Add another window after this one"
+        }
+      }
+    },
+    "error": {
+      "no_windows": "You must add at least one window.",
+      "invalid_name": "Window name cannot be empty.",
+      "invalid_facing": "Please select a valid compass direction."
+    },
+    "abort": {
+      "already_configured": "Solar Windows is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Solar Windows — edit settings",
+        "description": "{info}",
+        "data": {
+          "weather_entity": "Weather entity",
+          "sun_cone": "Sun cone width (degrees)",
+          "min_elevation": "Minimum sun elevation (degrees)",
+          "windows_json": "Windows (JSON)"
+        }
+      }
+    },
+    "error": {
+      "invalid_windows_json": "Invalid JSON. Each window needs 'name' and 'facing' (N/NE/E/SE/S/SW/W/NW)."
+    }
+  }
+}
